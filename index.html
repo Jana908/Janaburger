@@ -14,7 +14,7 @@
 		<a href="javascript:;">
 			<img src="menu.png">
 		</a>
-          <nav style.css="display:block;">
+          <nav id="menu" class="esconder">
             <ul>
                 <li><a href="">Inicio</a></li>
                 <li><a href="">lanche</a></li>
@@ -22,6 +22,12 @@
                 <li><a href="">Combos</a></li>
               </ul>
           </nav>
+            <script>
+                function mostraMenu(){
+                    const menu = document.getElementById('menu');
+                    menu.classList.toggle('active');
+                   }
+            </script>
 	</header>
 </body>
 </html>
